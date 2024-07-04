@@ -29,3 +29,12 @@ def no(a):
 
 for i in range(len(b)):
     no(b[i])
+
+def add(a,b):
+    print(a+b)
+
+add(10,20)
+add(40,5)
+
+n=10
+c = n>8
