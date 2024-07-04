@@ -8,3 +8,6 @@ for i in range(len(a)):
         lo+=1
 print(up,lo)
 print(a[::-1])
+
+import math
+print(math.isqrt(81))
