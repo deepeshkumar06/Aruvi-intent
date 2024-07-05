@@ -69,3 +69,20 @@ print(even)
 li = list(range(10))
 square = list(map(lambda s : s**2,li))
 print(square)
+
+# Reduce Function
+from functools import reduce
+li=list(range(11))
+res=reduce(lambda x,y:x+y,li)
+print('Reduced List of 1 to 10 Number is:')
+print(res) 
+
+import math as m
+print(m.isqrt(9))
+print(m.sqrt(9))
+
+# help('math')
+print(m.pow(2,6))
+print(m.ceil(90.01))
+print(m.floor(90.01))
+
