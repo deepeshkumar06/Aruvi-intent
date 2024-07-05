@@ -41,48 +41,76 @@
 
 #Arbitary function:*,**:
 
-def lang(*a):
-    for l in a:
-        print("I Like to learn : ",l)
-lang("C","C++","Python")
+# def lang(*a):
+#     for l in a:
+#         print("I Like to learn : ",l)
+# lang("C","C++","Python")
 
-def stu(**karg):
-    for key,value in karg.items():
-        print(key,value)
-stu(Name="Deepesh",Degree="B.E",Role="Developer")
+# def stu(**karg):
+#     for key,value in karg.items():
+#         print(key,value)
+# stu(Name="Deepesh",Degree="B.E",Role="Developer")
 
-def stu(**karg):
-    for key,value in karg.items():
-        print('%s == %s'%(key,value))
-stu(Name="Deepesh",Degree="B.E",Role="Developer")
+# def stu(**karg):
+#     for key,value in karg.items():
+#         print('%s == %s'%(key,value))
+# stu(Name="Deepesh",Degree="B.E",Role="Developer")
 
 
 #Lambda Function
 
-a = lambda x,y,z : print('%s'%(x+y+z))
-a(4,5,6)
+# a = lambda x,y,z : print('%s'%(x+y+z))
+# a(4,5,6)
 
-li = [1,2,3,4,5,6]
-even = list(filter(lambda x : x%2==0,li))
-print(even)
+# li = [1,2,3,4,5,6]
+# even = list(filter(lambda x : x%2==0,li))
+# print(even)
 
-li = list(range(10))
-square = list(map(lambda s : s**2,li))
-print(square)
+# li = list(range(10))
+# square = list(map(lambda s : s**2,li))
+# print(square)
 
 # Reduce Function
-from functools import reduce
-li=list(range(11))
-res=reduce(lambda x,y:x+y,li)
-print('Reduced List of 1 to 10 Number is:')
-print(res) 
+# from functools import reduce
+# li=list(range(11))
+# res=reduce(lambda x,y:x+y,li)
+# print('Reduced List of 1 to 10 Number is:')
+# print(res) 
 
-import math as m
-print(m.isqrt(9))
-print(m.sqrt(9))
+# import math as m
+# print(m.isqrt(9))
+# print(m.sqrt(9))
 
 # help('math')
-print(m.pow(2,6))
-print(m.ceil(90.01))
-print(m.floor(90.01))
+# print(m.pow(2,6))
+# print(m.ceil(90.01))
+# print(m.floor(90.01))
 
+# print(m.factorial(8))
+# sum = 1
+# f = 8
+# for i in range(1,11):
+#     print(i)
+# while f>=1:
+#     sum = sum*f
+#     f -=1
+# print(sum)
+
+# print(m.pi)
+# print(22/7)
+
+# radius = int(input("Enter the radius of the circle : "))
+# area = m.pi*(m.pow(radius,2))
+# area1 = m.pi*(radius**2)
+# print(area,"  ",area1)
+
+# import calendar
+# print(calendar.calendar(2025,2))
+# print(calendar.month(2025,6))
+
+import time
+print(time.ctime())
+
+from datetime import date
+print(date.today())
+print(date.today().month)
